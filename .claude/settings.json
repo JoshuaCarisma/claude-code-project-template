@@ -3,13 +3,23 @@
     "PreToolUse": [
       {
         "matcher": "Bash",
-        "command": ".claude/hooks/block-dangerous.sh"
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/joshuacarisma/Projects/_starter-kit/.claude/hooks/block-dangerous.sh"
+          }
+        ]
       }
     ],
     "PostToolUse": [
       {
         "matcher": "Edit|Write",
-        "command": "npm run lint --silent || true"
+        "hooks": [
+          {
+            "type": "command",
+            "command": "npm run lint --silent || true"
+          }
+        ]
       }
     ]
   }

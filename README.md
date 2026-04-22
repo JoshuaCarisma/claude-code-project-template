@@ -10,4 +10,5 @@
 3. `git init && git add . && git commit -m "chore: project foundation"`
 4. Open in VS Code, run `/generate-claude-md` in Claude Code
 5. Run `/generate-architecture` in Claude Code
-6. Start building with Plan Mode
+6. Update absolute path in .claude/settings.json to match this project's location
+7. Start building with Plan Mode
